@@ -1,6 +1,6 @@
 import $ from 'miaoxing';
 import curUrl from '@mxjs/cur-url';
-import app from '@weijs/app';
+import app from '@mxjs/app';
 
 const http = {};
 
