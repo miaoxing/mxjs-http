@@ -38,10 +38,10 @@ http.curDestroy = function (id = null, config = null) {
 
 http.curForm = function (config = null) {
   return $.post(curUrl.apiForm(), config);
-}
+};
 
 http.curPath = function (path, config = null) {
   return $.get(curUrl.toApi(path), config);
-}
+};
 
 export default http;
