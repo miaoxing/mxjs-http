@@ -1,29 +1,29 @@
 import $ from 'miaoxing';
 import curUrl from '@mxjs/cur-url';
-import app from '@mxjs/app';
+import {app} from '@mxjs/app';
 
 const api = {};
 
 // HTTP methods
 
 api.get = function (url, config) {
-  return $.get(app.apiUrl(url), config);
+  return $.get($.apiUrl(url), config);
 };
 
 api.post = function (url, config) {
-  return $.post(app.apiUrl(url), config);
+  return $.post($.apiUrl(url), config);
 };
 
 api.patch = function (url, config) {
-  return $.patch(app.apiUrl(url), config);
+  return $.patch($.apiUrl(url), config);
 };
 
 api.put = function (url, config) {
-  return $.put(app.apiUrl(url), config);
+  return $.put($.apiUrl(url), config);
 };
 
 api.delete = function (url, config) {
-  return $.delete(app.apiUrl(url), config);
+  return $.delete($.apiUrl(url), config);
 };
 
 // Item
