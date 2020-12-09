@@ -101,4 +101,27 @@ api.curForm = (config) => {
   return $.http({...curUrl.apiFormUrlAndMethod(), ...config});
 };
 
+/**
+ * 后台允许返回的最大数据量
+ *
+ * @type {number}
+ */
+api.maxLimit = 500;
+
+api.getMax = function (url, config) {
+  return this.get(url, addLimit(config));
+}
+
+api.getMaxCurColl = function (config) {
+  return this.getCurColl(addLimit(config));
+}
+
+function addLimit(config = {}) {
+  if (typeof config.params === 'undefined') {
+    config.params = {};
+  }
+  config.params.limit = api.maxLimit;
+  return config;
+}
+
 export default api;
