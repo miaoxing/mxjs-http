@@ -110,11 +110,11 @@ api.maxLimit = 500;
 
 api.getMax = function (url, config) {
   return this.get(url, addLimit(config));
-}
+};
 
 api.getMaxCurColl = function (config) {
   return this.getCurColl(addLimit(config));
-}
+};
 
 function addLimit(config = {}) {
   if (typeof config.params === 'undefined') {
