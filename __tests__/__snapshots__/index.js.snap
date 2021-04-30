@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test get 1`] = `
+Object {
+  "data": Object {
+    "bar": 4,
+    "foo": 3,
+  },
+}
+`;
+
+exports[`test get 2`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "loading": true,
+        "method": "get",
+        "url": "/api/abc",
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": Promise {
+        "reject": [Function],
+        "resolve": [Function],
+      },
+    },
+  ],
+}
+`;
