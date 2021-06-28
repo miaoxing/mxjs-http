@@ -1,6 +1,5 @@
 import $ from 'miaoxing';
 import curUrl from '@mxjs/cur-url';
-import {app} from '@mxjs/app';
 
 const api = {};
 
@@ -29,23 +28,23 @@ api.delete = function (url, config) {
 // Item
 
 api.getCurItem = function (id, config) {
-  return $.get(app.apiShow(id), config);
+  return $.get(curUrl.apiShow(id), config);
 };
 
 api.postCurItem = function (id, config) {
-  return $.post(app.apiShow(id), config);
+  return $.post(curUrl.apiShow(id), config);
 };
 
 api.patchCurItem = function (id, config) {
-  return $.patch(app.apiShow(id), config);
+  return $.patch(curUrl.apiShow(id), config);
 };
 
 api.putCurItem = function (id, config) {
-  return $.put(app.apiShow(id), config);
+  return $.put(curUrl.apiShow(id), config);
 };
 
 api.deleteCurItem = function (id, config) {
-  return $.delete(app.apiShow(id), config);
+  return $.delete(curUrl.apiShow(id), config);
 };
 
 // Collection
