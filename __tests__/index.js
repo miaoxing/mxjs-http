@@ -8,9 +8,11 @@ describe('test', () => {
   test('get', async () => {
     const promise = createPromise();
     $.http = jest.fn().mockImplementationOnce(() => promise.resolve({
-      data: {
-        foo: 3,
-        bar: 4,
+      ret: {
+        data: {
+          foo: 3,
+          bar: 4,
+        },
       },
     }));
 

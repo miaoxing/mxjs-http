@@ -2,9 +2,11 @@
 
 exports[`test get 1`] = `
 Object {
-  "data": Object {
-    "bar": 4,
-    "foo": 3,
+  "ret": Object {
+    "data": Object {
+      "bar": 4,
+      "foo": 3,
+    },
   },
 }
 `;
